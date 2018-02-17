@@ -17,6 +17,6 @@ static unsigned ramsize;
 static unsigned PC;
 
 
-unsigned
-translate_opcode(struct _string *opcode);
+void 
+(*translate_opcode()) (struct _string *opcode);
 #endif

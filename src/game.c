@@ -6,4 +6,22 @@
 #include "game.h"
 #include "ram.h"
 #include "assembly.h"
-#include "string.h"
+#include "../libraries/stringlibC/string.h"
+
+
+
+void 
+(*translate_opcode()) (struct _string *opcode)
+{
+    switch (opcode->rawString) {
+        case "mov":
+            return mov;
+        case "movr":
+            return mov_ram_to_reg;
+        case "movl":
+            return mov_reg_to_ram;
+        case "movl":
+            return mov;
+    }
+
+}

@@ -6,6 +6,48 @@
 #include "game.h"
 #include "ram.h"
 #include "assembly.h"
+void
+mov_reg_to_reg (unsigned dest, unsigned source, unsigned owner)
+{
+    if(reg_check(dest) || reg_check(source)){
+        err = 1;
+        return
+    }
+    reg[owner][dest] = reg[owner][source];
+
+}
+
+void
+mov_ram_to_ram (unsigned dest, unsigned source, unsigned owner)
+{
+    if(ram_check(dest) || ram_check(source)){
+        err = 1;
+        return
+    }
+    ram_set(RAM, dest, ram_get(RAM, source));
+    ram_set_owner(RAM, dest, owner);
+}
+
+void
+mov_ram_to_reg (unsigned dest, unsigned source, int owner)
+{
+    if(reg_check(dest) || ram_check(source)){
+        err = 1;
+        return
+    }
+    reg[owner][dest] = ram_get(RAM, source);
+}
+
+void
+mov_reg_to_ram (unsigned dest, unsigned source, int owner)
+{
+    if(ram_check(dest) || reg_check(source)){
+        err = 1;
+        return
+    }
+    ram_set(RAM, dest, reg[owner][source]);
+    ram_set_owner(RAM, dest, owner);
+}
 
 void
 bun (unsigned dest, unsigned source)

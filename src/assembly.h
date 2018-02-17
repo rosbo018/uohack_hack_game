@@ -10,6 +10,12 @@ void
 mov (unsigned dest, unsigned source, unsigned owner);
 
 void
+mov_reg_to_reg (unsigned dest, unsigned source, unsigned owner);
+
+void
+mov_ram_to_ram (unsigned dest, unsigned source);
+
+void
 mov_ram_to_reg (unsigned dest, unsigned source, int owner);
 
 void
