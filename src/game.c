@@ -17,14 +17,14 @@ void
 (*translate_opcode()) (struct _string *opcode)
 {
     switch (opcode->rawString) {
-        case "mov":
-            return mov;
-        case "movr":
+        case "movaa":
+            return mov_ram_to_ram;
+        case "movae":
             return mov_ram_to_reg;
-        case "movl":
+        case "movea":
             return mov_reg_to_ram;
-        case "movl":
-            return mov;
+        case "movee":
+            return mov_reg_to_reg;
     }
 
 }
