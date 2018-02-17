@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ASSEMBLY_H	assembly.c	15;"	d	file:
+EQ	assembly.h	3;"	d
+GAME_H	assembly.c	7;"	d	file:
+GAME_H	game.c	6;"	d	file:
+GT	assembly.h	1;"	d
+LT	assembly.h	2;"	d
+PC	game.h	/^static unsigned PC;$/;"	v
+RAM	game.h	/^struct ram *RAM;$/;"	v	typeref:struct:ram
+RAM_H	assembly.c	11;"	d	file:
+RAM_H	game.c	10;"	d	file:
+RAM_SIZE	game.h	1;"	d
+REG_SIZE	game.h	2;"	d
+STDLIB_H	assembly.c	3;"	d	file:
+STDLIB_H	game.c	2;"	d	file:
+bgt	assembly.c	/^bgt(unsigned dest)$/;"	f
+blt	assembly.c	/^blt(unsigned dest)$/;"	f
+bun	assembly.c	/^bun (unsigned dest, unsigned source)$/;"	f
+cmp	assembly.c	/^cmp (unsigned cmp1, unsigned cmp2)$/;"	f
+data	ram.h	/^    unsigned data;$/;"	m	struct:ramblock
+err	game.h	/^static unsigned err:1;$/;"	v
+false	game.h	4;"	d
+flag	game.h	/^static unsigned flag;$/;"	v
+owner	ram.h	/^    unsigned owner;$/;"	m	struct:ramblock
+paramreg	game.h	/^static unsigned paramreg;$/;"	v
+ram	ram.h	/^struct ram {$/;"	s
+ram_check	ram.c	/^ram_check(unsigned loc)$/;"	f
+ram_get	ram.c	/^ram_get(struct ram *ramblock, unsigned loc){$/;"	f
+ram_get_owner	ram.c	/^ram_get_owner(struct ram *ramblock, unsigned loc)$/;"	f
+ram_initBloc	ram.c	/^ram_initBloc()$/;"	f
+ram_set	ram.c	/^ram_set(struct ram *ramblock, unsigned loc, unsigned data)$/;"	f
+ramblock	ram.h	/^struct ramblock {$/;"	s
+ramdata	ram.h	/^    struct ramblock *ramdata;$/;"	m	struct:ram	typeref:struct:ram::ramblock
+ramsize	game.h	/^static unsigned ramsize;$/;"	v
+reg	game.h	/^static unsigned reg[2][REG_SIZE];$/;"	v
+reg_check	ram.c	/^reg_check(unsigned loc)$/;"	f
+returnreg	game.h	/^static unsigned returnreg;$/;"	v
+size	ram.h	/^    int size;$/;"	m	struct:ram
+true	game.h	3;"	d
