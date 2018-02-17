@@ -1,3 +1,6 @@
+/*copyright ryan osborne
+ * lisenced under gpl v2
+ */
 #ifndef ASSEMBLY_H
 #define ASSEMBLY_H
 

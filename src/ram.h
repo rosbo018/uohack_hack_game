@@ -1,3 +1,6 @@
+/*copyright ryan osborne
+ * lisenced under gpl v2
+ */
 #ifndef RAM_H
 #define RAM_H
 

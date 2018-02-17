@@ -1,3 +1,6 @@
+/*copyright ryan osborne
+ * lisenced under gpl v2
+ */
 #ifndef GAME_H
 #define GAME_H
 

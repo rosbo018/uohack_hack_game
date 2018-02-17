@@ -1,3 +1,6 @@
+/*copyright ryan osborne
+ * lisenced under gpl v2
+ */
 #include "game.h"
 #include "ram.h"
 #include "assembly.h"

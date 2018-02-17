@@ -1,3 +1,6 @@
+/*copyright ryan osborne
+ * lisenced under gpl v2
+ */
 
 #ifndef STDLIB_H
 #define STDLIB_H
